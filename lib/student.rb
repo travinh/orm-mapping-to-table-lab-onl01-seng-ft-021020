@@ -22,7 +22,7 @@ class Student
         name TEXT,
         grade INTEGER)
     SQL
-    DB[:conn].executeDB[:conn].execute("SELECT last_insert_rowid() FROM songs")[0][0](sql)
+    DB[:conn].execute(sql)
   end
   
   def self.drop_table
